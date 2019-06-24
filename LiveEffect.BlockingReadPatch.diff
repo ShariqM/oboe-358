@@ -1,0 +1,404 @@
+diff --git a/samples/LiveEffect/src/main/cpp/Constants.h b/samples/LiveEffect/src/main/cpp/Constants.h
+index 50e2ac7..f3f0908 100644
+--- a/samples/LiveEffect/src/main/cpp/Constants.h
++++ b/samples/LiveEffect/src/main/cpp/Constants.h
+@@ -5,4 +5,15 @@
+ #ifndef SAMPLES_CONSTANTS_H
+ #define SAMPLES_CONSTANTS_H
+ 
++constexpr int32_t kStreamSampleRate = 48000; // For now we force this so we can resample easily.
++constexpr int32_t kModelSampleRate = 8000; // Fixed sample rate, see README
++
++constexpr int kBufferSizeInBursts = 2; // Use 2 bursts as the buffer size (double buffer)
++// XXX(shariq): Changed to 4 because: BurstSize = 96. TFLite wants 128 chunks. 4 * 96 = 3 * 128
++//constexpr int kBufferSizeInBursts = 8; // Use 4 bursts as the buffer size (quadruple buffer)
++
++
++// constexpr int kMaxQueueItems = 8192; // Must be power of 2
++constexpr int kMaxQueueItems = 32768; // Must be power of 2
++
+ #endif //SAMPLES_CONSTANTS_H
+diff --git a/samples/LiveEffect/src/main/cpp/LiveEffectEngine.cpp b/samples/LiveEffect/src/main/cpp/LiveEffectEngine.cpp
+index 6aabb8f..952111b 100644
+--- a/samples/LiveEffect/src/main/cpp/LiveEffectEngine.cpp
++++ b/samples/LiveEffect/src/main/cpp/LiveEffectEngine.cpp
+@@ -27,6 +27,10 @@ LiveEffectEngine::~LiveEffectEngine() {
+ 
+     mFullDuplexPass.stop();
+     closeStream(mPlayStream);
++    // Thread Safety
++    threadExitSignal.set_value();  // Tell the thread to stop reading from the recordingStream.
++    recordAndWriteThread.join();  // Wait until it's done.
++    drainQueue();  // No one is touching the queue now.
+     closeStream(mRecordingStream);
+ 
+ }
+@@ -54,7 +58,15 @@ void LiveEffectEngine::setEffectOn(bool isOn) {
+         mIsEffectOn = isOn;
+         if (isOn) {
+             openStreams();
++            mSampleRate = mPlayStream->getSampleRate();
+             mFullDuplexPass.start();
++
++            // Reset startup variables.
++            recordingDrained = false;
++            mCountInputBurstsCushion = mNumInputBurstsCushion;
++            mCountCallbacksToDrain = kNumCallbacksToDrain;
++
++            recordAndWriteThread = createRecordAndWriteThread();
+         } else {
+             mFullDuplexPass.stop();
+             /*
+@@ -65,11 +77,22 @@ void LiveEffectEngine::setEffectOn(bool isOn) {
+             * which would cause the app to crash since the recording stream would be
+             * null.
+             */
++
+             closeStream(mPlayStream);
++            // Thread Safety
++            threadExitSignal.set_value();  // Tell the thread to stop reading from the recordingStream.
++            recordAndWriteThread.join();  // Wait until it's done.
++            drainQueue();  // No one is touching the queue now.
+             closeStream(mRecordingStream);
+        }
+     }
+ }
++
++void LiveEffectEngine::drainQueue() {
++    int16_t value;
++    while (queue.pop(value));
++}
++
+ void LiveEffectEngine::openStreams() {
+     // Note: The order of stream creation is important. We create the playback
+     // stream first, then use properties from the playback stream
+@@ -172,6 +195,75 @@ void LiveEffectEngine::warnIfNotLowLatency(oboe::AudioStream *stream) {
+     }
+ }
+ 
++void LiveEffectEngine::recordAndWrite(std::future<void> exitFuture) {
++    /*
++     * exitFuture will trigger when we need to stop.
++     */
++
++    int numFrames = 128 * 6;
++    int64_t timeoutNanos = 1e6 * (numFrames / (mSampleRate / 1000.0));
++    void *audioData = new int16_t[numFrames];
++
++    int32_t actualFramesRead = 0;
++    while (mCountCallbacksToDrain > 0) {
++        // Drain the input.
++        int32_t totalFramesRead = 0;
++        do {
++            oboe::ResultWithValue<int32_t> result = mRecordingStream->read(audioData,
++                                                                           numFrames,
++                                                                           0 /* timeout */);
++            if (!result) {
++                // Ignore errors because input stream may not be started yet.
++                break;
++            }
++            actualFramesRead = result.value();
++            totalFramesRead += actualFramesRead;
++        } while (actualFramesRead > 0);
++        // Only counts if we actually got some data.
++        if (totalFramesRead > 0) {
++            mCountCallbacksToDrain--;
++        }
++    }
++    recordingDrained = true;
++
++    int32_t framesRead = 0;
++    // Continually read from the microphone until closeAllStreams() is called.
++    while ((exitFuture).wait_for(std::chrono::nanoseconds(0)) == std::future_status::timeout) {
++        oboe::ResultWithValue<int32_t> status =
++                mRecordingStream->read(audioData, numFrames, timeoutNanos);
++        if (!status) {
++            LOGE("input stream read error: %s", oboe::convertToText(status.error()));
++            break;
++        }
++        framesRead = status.value();
++
++        if (framesRead < numFrames) {
++            LOGE("%s framesRead=%d < numFrames=%d", TAG, framesRead, numFrames);
++            int32_t bytesPerFrame = mRecordingStream->getChannelCount() *
++                                    mRecordingStream->getBytesPerSample();
++
++            // uint8_t because 8 bits in a byte.
++            uint8_t *padPos =
++                    static_cast<uint8_t *>(audioData) + framesRead * bytesPerFrame;
++            memset(padPos, 0, static_cast<size_t>((numFrames - framesRead) * bytesPerFrame));
++        }
++
++        int16_t *newData = static_cast<int16_t *>(audioData);
++
++        for (int i = 0; i < numFrames; i++) {
++            queue.push(newData[i]);
++        }
++        LOGI("%s recordAndWriteThread wrote to queue. Queue Size: %d", TAG, queue.size());
++    }
++}
++
++std::thread LiveEffectEngine::createRecordAndWriteThread() {
++    threadExitSignal = std::promise<void>();
++    return std::thread (&LiveEffectEngine::recordAndWrite, this,
++                        threadExitSignal.get_future());
++}
++
++
+ /**
+  * Handles playback stream's audio request. In this sample, we simply block-read
+  * from the record stream for the required samples.
+@@ -182,8 +274,20 @@ void LiveEffectEngine::warnIfNotLowLatency(oboe::AudioStream *stream) {
+  * @return: DataCallbackResult::Continue.
+  */
+ oboe::DataCallbackResult LiveEffectEngine::onAudioReady(
+-    oboe::AudioStream *oboeStream, void *audioData, int32_t numFrames) {
+-    return mFullDuplexPass.onAudioReady(oboeStream, audioData, numFrames);
++        oboe::AudioStream *oboeStream, void *audioData, int32_t numFrames) {
++    assert(oboeStream == mPlayStream);
++    LOGI("%s onAudioReady called with queue_size=%d, numFrames=%d", TAG, queue.size(), numFrames);
++
++    int32_t numBytes = numFrames * oboeStream->getBytesPerFrame();
++    memset(audioData, 0 /* value */, numBytes);
++    int16_t *filteredData16 = static_cast<int16_t *>(audioData);
++    for (int i = 0; i < numFrames; i++) {
++        if (!queue.pop(filteredData16[i])) {
++            filteredData16[i] = 0;
++        }
++    }
++
++    return oboe::DataCallbackResult::Continue;
+ }
+ 
+ /**
+diff --git a/samples/LiveEffect/src/main/cpp/LiveEffectEngine.h b/samples/LiveEffect/src/main/cpp/LiveEffectEngine.h
+index be62d6f..ee5a455 100644
+--- a/samples/LiveEffect/src/main/cpp/LiveEffectEngine.h
++++ b/samples/LiveEffect/src/main/cpp/LiveEffectEngine.h
+@@ -21,7 +21,10 @@
+ #include <oboe/Oboe.h>
+ #include <string>
+ #include <thread>
++#include <future>
+ #include "FullDuplexPass.h"
++#include "LockFreeQueue.h"
++#include "Constants.h"
+ 
+ class LiveEffectEngine : public oboe::AudioStreamCallback {
+    public:
+@@ -44,20 +47,50 @@ class LiveEffectEngine : public oboe::AudioStreamCallback {
+     bool isAAudioSupported(void);
+ 
+    private:
++    const char* TAG = "LiveEffectEngine";
+     FullDuplexPass mFullDuplexPass;
++
++    // TODO add getters and setters
++    static constexpr int32_t kNumCallbacksToDrain   = 1;
++    //static constexpr int32_t kNumCallbacksToDiscard = 30;
++
++    // let input fill back up, usually 0 or 1
++    int32_t              mNumInputBurstsCushion = 1;
++
++    // We want to reach a state where the input buffer is empty and
++    // the output buffer is full.
++    // These are used in order.
++    // Drain several callback so that input is empty.
++    int32_t              mCountCallbacksToDrain = kNumCallbacksToDrain;
++    // Let the input fill back up slightly so we don't run dry.
++    int32_t              mCountInputBurstsCushion = mNumInputBurstsCushion;
++    // Discard some callbacks so the input and output reach equilibrium.
++    //int32_t              mCountCallbacksToDiscard = kNumCallbacksToDiscard;
++
++    LockFreeQueue<int16_t, kMaxQueueItems> queue;
++    void drainQueue();
++
++    bool recordingDrained = false;
+     bool mIsEffectOn = false;
+     int32_t mRecordingDeviceId = oboe::kUnspecified;
+     int32_t mPlaybackDeviceId = oboe::kUnspecified;
+     oboe::AudioFormat mFormat = oboe::AudioFormat::I16;
+     int32_t mSampleRate = oboe::kUnspecified;
+-    int32_t mInputChannelCount = oboe::ChannelCount::Stereo;
+-    int32_t mOutputChannelCount = oboe::ChannelCount::Stereo;
++    int32_t mInputChannelCount = oboe::ChannelCount::Mono;
++    int32_t mOutputChannelCount = oboe::ChannelCount::Mono;
+     oboe::AudioStream *mRecordingStream = nullptr;
+     oboe::AudioStream *mPlayStream = nullptr;
+     oboe::AudioApi mAudioApi = oboe::AudioApi::AAudio;
+ 
+     void closeStream(oboe::AudioStream *stream);
+ 
++    void recordAndWrite(std::future<void> exitFuture);
++    std::thread createRecordAndWriteThread();
++    std::thread recordAndWriteThread;
++    std::promise<void> threadExitSignal;
++
++
++
+ 
+     oboe::AudioStreamBuilder *setupCommonStreamParameters(
+         oboe::AudioStreamBuilder *builder);
+diff --git a/samples/LiveEffect/src/main/cpp/LockFreeQueue.h b/samples/LiveEffect/src/main/cpp/LockFreeQueue.h
+index f874b26..276ff93 100644
+--- a/samples/LiveEffect/src/main/cpp/LockFreeQueue.h
++++ b/samples/LiveEffect/src/main/cpp/LockFreeQueue.h
+@@ -1,14 +1,154 @@
+-//
+-// Created by Shariq Mobin on 2019-06-17.
+-//
++/*
++ * Copyright 2018 The Android Open Source Project
++ *
++ * Licensed under the Apache License, Version 2.0 (the "License");
++ * you may not use this file except in compliance with the License.
++ * You may obtain a copy of the License at
++ *
++ *      http://www.apache.org/licenses/LICENSE-2.0
++ *
++ * Unless required by applicable law or agreed to in writing, software
++ * distributed under the License is distributed on an "AS IS" BASIS,
++ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++ * See the License for the specific language governing permissions and
++ * limitations under the License.
++ */
++
+ 
+ #ifndef SAMPLES_LOCKFREEQUEUE_H
+ #define SAMPLES_LOCKFREEQUEUE_H
+ 
++// #include <cstdint>  XXX(shariqm): This was causing problems with int16_t for the *Engine.h
++#include <atomic>
++
++/**
++ * A lock-free queue for single consumer, single producer. Not thread-safe when using multiple
++ * consumers or producers.
++ *
++ * Example code:
++ *
++ * LockFreeQueue<int, 1024> myQueue;
++ * int value = 123;
++ * myQueue.push(value);
++ * myQueue.pop(value);
++ *
++ * @tparam T - The item type
++ * @tparam CAPACITY - Maximum number of items which can be held in the queue. Must be a power of 2.
++ * Must be less than the maximum value permissible in INDEX_TYPE
++ * @tparam INDEX_TYPE - The internal index type, defaults to uint32_t. Changing this will affect
++ * the maximum capacity. Included for ease of unit testing because testing queue lengths of
++ * UINT32_MAX can be time consuming and is not always possible.
++ */
+ 
++template <typename T, uint32_t CAPACITY, typename INDEX_TYPE = uint32_t>
+ class LockFreeQueue {
++public:
+ 
+-};
++    /**
++     * Implementation details:
++     *
++     * We have 2 counters: readCounter and writeCounter. Each will increment until it reaches
++     * INDEX_TYPE_MAX, then wrap to zero. Unsigned integer overflow is defined behaviour in C++.
++     *
++     * Each time we need to access our data array we call mask() which gives us the index into the
++     * array. This approach avoids having a "dead item" in the buffer to distinguish between full
++     * and empty states. It also allows us to have a size() method which is easily calculated.
++     *
++     * IMPORTANT: This implementation is only thread-safe with a single reader thread and a single
++     * writer thread. Have more than one of either will result in Bad Things™.
++     */
++
++    static constexpr bool isPowerOfTwo(uint32_t n) { return (n & (n - 1)) == 0; }
++    static_assert(isPowerOfTwo(CAPACITY), "Capacity must be a power of 2");
++    static_assert(std::is_unsigned<INDEX_TYPE>::value, "Index type must be unsigned");
++
++    /**
++     * Pop a value off the head of the queue
++     *
++     * @param val - element will be stored in this variable
++     * @return true if value was popped successfully, false if the queue is empty
++     */
++    bool pop(T &val) {
++        if (isEmpty()){
++            return false;
++        } else {
++            val = buffer[mask(readCounter)];
++            ++readCounter;
++            return true;
++        }
++    }
++
++    /**
++     * Add an item to the back of the queue
++     *
++     * @param item - The item to add
++     * @return true if item was added, false if the queue was full
++     */
++    bool push(const T& item) {
++        if (isFull()){
++            return false;
++        } else {
++            buffer[mask(writeCounter)] = item;
++            ++writeCounter;
++            return true;
++        }
++    }
++
++    /**
++     * Get the item at the front of the queue but do not remove it
++     *
++     * @param item - item will be stored in this variable
++     * @return true if item was stored, false if the queue was empty
++     */
++    bool peek(T &item) const {
++        if (isEmpty()){
++            return false;
++        } else {
++            item = buffer[mask(readCounter)];
++            return true;
++        }
++    }
++
++    /**
++     * Get the number of items in the queue
++     *
++     * @return number of items in the queue
++     */
++    INDEX_TYPE size() const {
+ 
++        /**
++         * This is worth some explanation:
++         *
++         * Whilst writeCounter is greater than readCounter the result of (write - read) will always
++         * be positive. Simple.
++         *
++         * But when writeCounter is equal to INDEX_TYPE_MAX (e.g. UINT32_MAX) the next push will
++         * wrap it around to zero, the start of the buffer, making writeCounter less than
++         * readCounter so the result of (write - read) will be negative.
++         *
++         * But because we're returning an unsigned type return value will be as follows:
++         *
++         * returnValue = INDEX_TYPE_MAX - (write - read)
++         *
++         * e.g. if write is 0, read is 150 and the INDEX_TYPE is uint8_t where the max value is
++         * 255 the return value will be (255 - (0 - 150)) = 105.
++         *
++         */
++        return writeCounter - readCounter;
++    };
++
++private:
++
++    bool isEmpty() const { return readCounter == writeCounter; }
++
++    bool isFull() const { return size() == CAPACITY; }
++
++    INDEX_TYPE mask(INDEX_TYPE n) const { return static_cast<INDEX_TYPE>(n & (CAPACITY - 1)); }
++
++    T buffer[CAPACITY];
++    std::atomic<INDEX_TYPE> writeCounter { 0 };
++    std::atomic<INDEX_TYPE> readCounter { 0 };
++
++};
+ 
+ #endif //SAMPLES_LOCKFREEQUEUE_H

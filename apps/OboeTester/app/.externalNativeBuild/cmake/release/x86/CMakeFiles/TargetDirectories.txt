@@ -1,0 +1,6 @@
+/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/edit_cache.dir
+/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/rebuild_cache.dir
+/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/oboetester.dir
+/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/x86/oboe-bin/CMakeFiles/edit_cache.dir
+/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/x86/oboe-bin/CMakeFiles/rebuild_cache.dir
+/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/x86/oboe-bin/CMakeFiles/oboe.dir

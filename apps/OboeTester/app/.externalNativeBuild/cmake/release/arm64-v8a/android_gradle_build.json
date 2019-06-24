@@ -1,0 +1,342 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/CMakeLists.txt",
+		"/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/Users/shariqmobin/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"oboe-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "oboe",
+			"buildCommand" : "/Users/shariqmobin/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a --target oboe",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/aaudio/AAudioLoader.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/aaudio/AudioStreamAAudio.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/common/LatencyTuner.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/common/AudioStream.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/common/AudioStreamBuilder.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/common/Utilities.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/fifo/FifoBuffer.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/fifo/FifoController.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/fifo/FifoControllerBase.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/fifo/FifoControllerIndirect.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/flowgraph/AudioProcessorBase.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/flowgraph/ClipToRange.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/flowgraph/ManyToMultiConverter.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/flowgraph/MonoToMultiConverter.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/flowgraph/RampLinear.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/flowgraph/SinkFloat.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/flowgraph/SinkI16.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/flowgraph/SinkI24.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/flowgraph/SourceFloat.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/flowgraph/SourceI16.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/flowgraph/SourceI24.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/opensles/AudioInputStreamOpenSLES.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/opensles/AudioOutputStreamOpenSLES.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/opensles/AudioStreamBuffered.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/opensles/AudioStreamOpenSLES.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/opensles/EngineOpenSLES.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/opensles/OpenSLESUtilities.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/opensles/OutputMixerOpenSLES.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/common/StabilizedCallback.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/common/Trace.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot   -I../../../../../../../src -I../../../../../../../include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC   -std=c++14 -Wall -Wextra-semi -Wshadow -Wshadow-field -Ofast  -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/src/common/Version.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a/oboe-bin/liboboe.a",
+			"toolchain" : "6850466041165468880"
+		},
+		"oboetester-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "oboetester",
+			"buildCommand" : "/Users/shariqmobin/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a --target oboetester",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/AudioStreamGateway.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/FullDuplexAnalyzer.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/FullDuplexEcho.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/FullDuplexGlitches.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/FullDuplexLatency.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/FullDuplexStream.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/InputStreamCallbackAnalyzer.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/InterpolatingDelayLine.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/NativeAudioContext.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/OboeStreamCallbackProxy.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/PlayRecordingCallback.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/SawPingGenerator.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/flowunits/ImpulseOscillator.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/flowunits/OscillatorBase.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/flowunits/SawtoothOscillator.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/flowunits/SineOscillator.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/jni-bridge.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Doboetester_EXPORTS -I../../../../../../../include -I../../../../../../../src -I/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++14 -Werror -Wall -std=c++14 -O2 -DNDEBUG  -O3 -fPIC    -c ",
+					"src" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/src/main/cpp/util/WaveFileWriter.cpp",
+					"workingDirectory" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/build/intermediates/cmake/release/obj/arm64-v8a/liboboetester.so",
+			"toolchain" : "6850466041165468880"
+		}
+	},
+	"toolchains" : 
+	{
+		"6850466041165468880" : 
+		{
+			"cCompilerExecutable" : "/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/shariqmobin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}

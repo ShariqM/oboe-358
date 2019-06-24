@@ -1,0 +1,4 @@
+#Mon Jun 17 21:38:41 PDT 2019
+base.0=/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/build/intermediates/dex/debug/mergeDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex

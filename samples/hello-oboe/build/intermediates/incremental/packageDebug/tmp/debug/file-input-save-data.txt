@@ -1,0 +1,23 @@
+#Internal package file, do not edit.
+#Mon Jun 17 21:38:41 PDT 2019
+2.base=/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/build/intermediates/transforms/stripDebugSymbol/debug/0
+0.path=lib/arm64-v8a/libhello-oboe.so
+2.baseType=DIRECTORY
+3.base=/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/build/intermediates/transforms/stripDebugSymbol/debug/0
+2.set=NATIVE_RESOURCE
+1.path=lib/x86_64/libhello-oboe.so
+4.base=/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/build/intermediates/dex/debug/mergeDexDebug/out
+count=5
+2.path=lib/armeabi-v7a/libhello-oboe.so
+4.set=DEX
+3.path=lib/x86/libhello-oboe.so
+3.baseType=DIRECTORY
+1.set=NATIVE_RESOURCE
+4.path=classes.dex
+1.baseType=DIRECTORY
+0.base=/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/build/intermediates/transforms/stripDebugSymbol/debug/0
+0.baseType=DIRECTORY
+3.set=NATIVE_RESOURCE
+1.base=/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/build/intermediates/transforms/stripDebugSymbol/debug/0
+4.baseType=DIRECTORY
+0.set=NATIVE_RESOURCE

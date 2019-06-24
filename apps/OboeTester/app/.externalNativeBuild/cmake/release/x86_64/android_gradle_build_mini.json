@@ -1,0 +1,23 @@
+{
+  "buildFiles": [
+    "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/CMakeLists.txt",
+    "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/shariqmobin/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/x86_64 --target clean"
+  ],
+  "libraries": {
+    "oboetester-Release-x86_64": {
+      "artifactName": "oboetester",
+      "buildCommand": "/Users/shariqmobin/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/x86_64 --target oboetester",
+      "abi": "x86_64",
+      "output": "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/build/intermediates/cmake/release/obj/x86_64/liboboetester.so"
+    },
+    "oboe-Release-x86_64": {
+      "artifactName": "oboe",
+      "buildCommand": "/Users/shariqmobin/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/x86_64 --target oboe",
+      "abi": "x86_64",
+      "output": "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/x86_64/oboe-bin/liboboe.a"
+    }
+  }
+}

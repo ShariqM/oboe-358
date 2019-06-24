@@ -1,0 +1,15 @@
+Executable : /Users/shariqmobin/Library/Android/sdk/cmake/3.6.4111459/bin/cmake
+arguments : 
+-H/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app
+-B/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/debug/arm64-v8a
+-DANDROID_ABI=arm64-v8a
+-DANDROID_PLATFORM=android-26
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/build/intermediates/cmake/debug/obj/arm64-v8a
+-DCMAKE_BUILD_TYPE=Debug
+-DANDROID_NDK=/Users/shariqmobin/Library/Android/sdk/ndk-bundle
+-DCMAKE_CXX_FLAGS=-std=c++14
+-DCMAKE_TOOLCHAIN_FILE=/Users/shariqmobin/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/shariqmobin/Library/Android/sdk/cmake/3.6.4111459/bin/ninja
+-GAndroid Gradle - Ninja
+jvmArgs : 
+

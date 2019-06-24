@@ -1,0 +1,1 @@
+[{"outputType":{"type":"PROCESSED_RES"},"apkData":{"type":"MAIN","splits":[],"versionCode":1,"versionName":"1.0","enabled":true,"outputFile":"RhythmGame-ndkExtractor-debug.apk","fullName":"ndkExtractorDebug","baseName":"ndkExtractor-debug"},"path":"resources-ndkExtractorDebug.ap_","properties":{"packageId":"com.google.oboe.sample.rhythmgame","split":"","minSdkVersion":"21"}}]

@@ -1,0 +1,23 @@
+{
+  "buildFiles": [
+    "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/CMakeLists.txt",
+    "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/shariqmobin/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "oboetester-Release-armeabi-v7a": {
+      "artifactName": "oboetester",
+      "buildCommand": "/Users/shariqmobin/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/armeabi-v7a --target oboetester",
+      "abi": "armeabi-v7a",
+      "output": "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/build/intermediates/cmake/release/obj/armeabi-v7a/liboboetester.so"
+    },
+    "oboe-Release-armeabi-v7a": {
+      "artifactName": "oboe",
+      "buildCommand": "/Users/shariqmobin/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/armeabi-v7a --target oboe",
+      "abi": "armeabi-v7a",
+      "output": "/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/apps/OboeTester/app/.externalNativeBuild/cmake/release/armeabi-v7a/oboe-bin/liboboe.a"
+    }
+  }
+}

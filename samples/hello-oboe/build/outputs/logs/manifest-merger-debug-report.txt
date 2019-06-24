@@ -1,0 +1,168 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [:audio-device] /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/audio-device/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/bcec7ec11e60f3545c2248d96f961615/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/23eff1bd1eacba9c5e7e5805045b4d17/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/11dc8cfc89d7abf60162b3be4d48f79f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/6ffa92a906771d52b4f7a6ff34863c8b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/870ac89cb8647367fcb73c01f310efc9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/e00e06b3f867c79c097cb9f4dd9162dc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/1691bac64ef8c36ba40af030c0715bc0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/72090f6d4ef735a518070288154c5f16/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/6760e41d3f03f6852d5a980716a3ceda/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/d370987bc717a893636885e7705cdf09/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/6fcedff57074c200da3a3a1188f1ae9e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/b32879345f1620bb75caf31090617162/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/6a813418387906ec42c22f5a5c8bd26b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/7599f82ef47b409063c3db58739acc0c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/2d0e9ec70913f197e5ceabc7383725cb/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/1c6113009ce2d3149e2f4c0b1b00269a/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/fdbd483e13fba22fa5c589c531f3c2b3/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/c1b85b27011d0bf2b267a233e63c5bb3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/cf468cea771e5f54d3fb20777febbce7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/bdab355c91308bae9106e7109148cc82/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/0a2aee5d214e03f4dc09531d8c99d1cc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/f1fb785aa8cfdc52d1a5fa5dae7e3fea/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0-rc01] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/d0497d19bd2469ebd8b2fa143124f3d5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0-rc01] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/e1e20b7ac9e9eb0387608089d63e29a2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0-rc01] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/72b667861de41193ef461ce897cd717b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0-rc01] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/a3745f30da0b38b33eea7f95a24b751f/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:3:5-47
+		INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml
+		INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.audio.output
+ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:5:5-90
+	android:required
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:5:64-87
+	android:name
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:5:19-63
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:6:22-77
+application
+ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:7:5-23:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/23eff1bd1eacba9c5e7e5805045b4d17/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/23eff1bd1eacba9c5e7e5805045b4d17/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/1c6113009ce2d3149e2f4c0b1b00269a/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/1c6113009ce2d3149e2f4c0b1b00269a/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/fdbd483e13fba22fa5c589c531f3c2b3/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/fdbd483e13fba22fa5c589c531f3c2b3/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/1c6113009ce2d3149e2f4c0b1b00269a/AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:12:9-41
+	android:fullBackupContent
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:9:9-42
+	android:icon
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:8:9-36
+	android:theme
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:13:9-40
+activity#com.google.sample.oboe.hellooboe.MainActivity
+ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:14:7-22:18
+	android:screenOrientation
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:17:11-47
+	android:label
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:16:11-43
+	android:name
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:15:11-71
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:18:9-21:25
+action#android.intent.action.MAIN
+ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:19:11-63
+	android:name
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:19:19-60
+category#android.intent.category.LAUNCHER
+ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:20:11-71
+	android:name
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml:20:21-68
+uses-sdk
+INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml
+INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml
+MERGED from [:audio-device] /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/audio-device/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:audio-device] /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/audio-device/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/bcec7ec11e60f3545c2248d96f961615/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/bcec7ec11e60f3545c2248d96f961615/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/23eff1bd1eacba9c5e7e5805045b4d17/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/23eff1bd1eacba9c5e7e5805045b4d17/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/11dc8cfc89d7abf60162b3be4d48f79f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/11dc8cfc89d7abf60162b3be4d48f79f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/6ffa92a906771d52b4f7a6ff34863c8b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/6ffa92a906771d52b4f7a6ff34863c8b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/870ac89cb8647367fcb73c01f310efc9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/870ac89cb8647367fcb73c01f310efc9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/e00e06b3f867c79c097cb9f4dd9162dc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/e00e06b3f867c79c097cb9f4dd9162dc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/1691bac64ef8c36ba40af030c0715bc0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/1691bac64ef8c36ba40af030c0715bc0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/72090f6d4ef735a518070288154c5f16/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/72090f6d4ef735a518070288154c5f16/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/6760e41d3f03f6852d5a980716a3ceda/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/6760e41d3f03f6852d5a980716a3ceda/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/d370987bc717a893636885e7705cdf09/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/d370987bc717a893636885e7705cdf09/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/6fcedff57074c200da3a3a1188f1ae9e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/6fcedff57074c200da3a3a1188f1ae9e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/b32879345f1620bb75caf31090617162/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/b32879345f1620bb75caf31090617162/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/6a813418387906ec42c22f5a5c8bd26b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/6a813418387906ec42c22f5a5c8bd26b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/7599f82ef47b409063c3db58739acc0c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/7599f82ef47b409063c3db58739acc0c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/2d0e9ec70913f197e5ceabc7383725cb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/2d0e9ec70913f197e5ceabc7383725cb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/1c6113009ce2d3149e2f4c0b1b00269a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/1c6113009ce2d3149e2f4c0b1b00269a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/fdbd483e13fba22fa5c589c531f3c2b3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/fdbd483e13fba22fa5c589c531f3c2b3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/c1b85b27011d0bf2b267a233e63c5bb3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/c1b85b27011d0bf2b267a233e63c5bb3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/cf468cea771e5f54d3fb20777febbce7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/cf468cea771e5f54d3fb20777febbce7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/bdab355c91308bae9106e7109148cc82/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/bdab355c91308bae9106e7109148cc82/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/0a2aee5d214e03f4dc09531d8c99d1cc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/0a2aee5d214e03f4dc09531d8c99d1cc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/f1fb785aa8cfdc52d1a5fa5dae7e3fea/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0-rc02] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/f1fb785aa8cfdc52d1a5fa5dae7e3fea/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0-rc01] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/d0497d19bd2469ebd8b2fa143124f3d5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0-rc01] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/d0497d19bd2469ebd8b2fa143124f3d5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0-rc01] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/e1e20b7ac9e9eb0387608089d63e29a2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0-rc01] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/e1e20b7ac9e9eb0387608089d63e29a2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0-rc01] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/72b667861de41193ef461ce897cd717b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0-rc01] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/72b667861de41193ef461ce897cd717b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0-rc01] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/a3745f30da0b38b33eea7f95a24b751f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0-rc01] /Users/shariqmobin/.gradle/caches/transforms-2/files-2.1/a3745f30da0b38b33eea7f95a24b751f/AndroidManifest.xml:20:5-44
+INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml
+INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml
+		INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml
+		ADDED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml
+		INJECTED from /Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/hello-oboe/src/main/AndroidManifest.xml

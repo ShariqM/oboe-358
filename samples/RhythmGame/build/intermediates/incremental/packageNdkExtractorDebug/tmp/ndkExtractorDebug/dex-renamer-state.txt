@@ -1,0 +1,7 @@
+#Mon Jun 17 21:38:06 PDT 2019
+base.0=/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/RhythmGame/build/intermediates/dex/ndkExtractorDebug/mergeExtDexNdkExtractorDebug/out
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/Users/shariqmobin/AndroidStudioProjects/oboe-june/oboe/samples/RhythmGame/build/intermediates/dex/ndkExtractorDebug/mergeProjectDexNdkExtractorDebug/out
